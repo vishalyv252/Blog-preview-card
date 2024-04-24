@@ -14,11 +14,12 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 1). Desktop Design:
 
-
+![Desktop-Design](https://github.com/vishalyv252/Blog-preview-card/assets/105093020/311c231a-6be7-4ed2-8146-07b1c308b388)
 
 2). Mobile Design:
 
-
+![Mobile Design](https://github.com/vishalyv252/Blog-preview-card/assets/105093020/2b9b68dd-e7f3-4eb4-9eb6-bffff2fec016)
 
 3). Active State.
 
+https://github.com/vishalyv252/Blog-preview-card/assets/105093020/d6c32e33-a8ce-458d-b816-a93660266d32
