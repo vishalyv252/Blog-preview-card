@@ -1,0 +1,120 @@
+<main>
+
+  <!-- The Content is displayed for all devices, except all Mobile devices. -->
+  <div class="block Large_Mobile_Device_Size_View:hidden Medium_Mobile_Device_Size_View:hidden Small_Mobile_Device_Size_View:hidden">
+    <div class="flex justify-center items-center h-screen w-full overflow-x-hidden overflow-y-auto bg-Yellow font-Figtree">
+      <div class="flex justify-center items-center h-auto w-auto landscape:m-auto landscape:p-20">
+        <div class="flex flex-col justify-center items-center h-auto w-96 bg-White box_shadow p-6 rounded-[20px] border-solid border-2 border-Black" [ngClass]="!hover ? 'box_shadow transition duration-300 ease-in-out' : 'box_shadow_hover transition duration-300 ease-in-out'">
+          <img src="assets/images/illustration-article.svg" alt="This is Illustration Image." class="rounded-[10px] w-[336px] h-[200px]" />
+          <div class="my-6">
+            <div class="bg-Yellow px-3 py-1 w-[82px] rounded-[4px]">
+              <p class="font-extrabold text-sm text-center">Learning</p>
+            </div>
+            <div class="my-3">
+              <p class="font-semibold text-sm">Published 21 Dec 2023</p>
+            </div>
+            <!-- Article Title (with hover effect) -->
+            <div class="my-3">
+              <h1 class="font-extrabold text-2xl cursor-pointer" [ngClass]="!hover ? 'text-Black' : 'text-Yellow'" (mouseenter)="isHover()" (mouseleave)="isHover()">HTML & CSS foundations</h1>
+            </div>
+            <p class="font-semibold text-Grey text-base">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+          </div>
+          <div class="mr-auto">
+            <div class="flex justify-start items-center gap-3">
+              <img src="assets/images/image-avatar.webp" alt="This is avatar image." class="w-8 h-8" />
+              <p class="font-extrabold text-sm">Greg Hooper</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Content is displayed only for Large Size Mobile devices. -->
+  <div class="hidden Large_Mobile_Device_Size_View:block Medium_Mobile_Device_Size_View:hidden Small_Mobile_Device_Size_View:hidden">
+    <div class="flex justify-center items-center h-screen w-full overflow-x-hidden overflow-y-auto bg-Yellow font-Figtree">
+      <div class="flex justify-center items-center h-auto w-auto landscape:m-auto landscape:p-20">
+        <div class="flex flex-col justify-center items-center h-auto w-80 bg-White box_shadow p-6 rounded-[20px] box_shadow border-solid border-2 border-Black">
+          <img src="assets/images/illustration-article.svg" alt="This is Illustration Image." class="rounded-[10px]" />
+          <div class="my-6 w-[270px]">
+            <div class="bg-Yellow px-3 py-1 w-[82px] rounded-[4px]">
+              <p class="font-extrabold text-sm text-center">Learning</p>
+            </div>
+            <div class="my-3">
+              <p class="font-semibold text-sm">Published 21 Dec 2023</p>
+            </div>
+            <div class="my-3">
+              <h1 class="font-extrabold text-xl cursor-pointer text-Black">HTML & CSS foundations</h1>
+            </div>
+            <p class="font-semibold text-Grey text-sm w-[260px]">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+          </div>
+          <div class="mr-auto">
+            <div class="flex justify-start items-center gap-3">
+              <img src="assets/images/image-avatar.webp" alt="This is avatar image." class="w-8 h-8" />
+              <p class="font-extrabold text-sm">Greg Hooper</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Content is displayed only for Medium Size Mobile devices. -->
+  <div class="hidden Large_Mobile_Device_Size_View:hidden Medium_Mobile_Device_Size_View:block Small_Mobile_Device_Size_View:hidden">
+    <div class="flex justify-center items-center h-screen w-full overflow-x-hidden overflow-y-auto bg-Yellow font-Figtree">
+      <div class="flex justify-center items-center h-auto w-auto landscape:m-auto landscape:p-20">
+        <div class="flex flex-col justify-center items-center h-auto w-72 bg-White box_shadow p-5 rounded-[20px] box_shadow border-solid border-2 border-Black">
+          <img src="assets/images/illustration-article.svg" alt="This is Illustration Image." class="rounded-[10px]" />
+          <div class="my-5">
+            <div class="bg-Yellow px-3 py-1 w-[82px] rounded-[4px]">
+              <p class="font-extrabold text-xs text-center">Learning</p>
+            </div>
+            <div class="my-2.5">
+              <p class="font-semibold text-xs">Published 21 Dec 2023</p>
+            </div>
+            <div class="my-2.5">
+              <h1 class="font-extrabold text-[18px] cursor-pointer text-Black">HTML & CSS foundations</h1>
+            </div>
+            <p class="font-semibold text-Grey text-xs">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+          </div>
+          <div class="mr-auto">
+            <div class="flex justify-start items-center gap-3">
+              <img src="assets/images/image-avatar.webp" alt="This is avatar image." class="w-8 h-8" />
+              <p class="font-extrabold text-[13px]">Greg Hooper</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Content is displayed only for Small Size Mobile devices. -->
+  <div class="hidden Large_Mobile_Device_Size_View:hidden Medium_Mobile_Device_Size_View:hidden Small_Mobile_Device_Size_View:block">
+    <div class="flex justify-center items-center h-screen w-full overflow-x-hidden overflow-y-auto bg-Yellow font-Figtree">
+      <div class="flex justify-center items-center h-auto w-auto landscape:m-auto landscape:p-20">
+        <div class="flex flex-col justify-center items-center h-auto w-60 bg-White box_shadow p-4 rounded-[20px] box_shadow border-solid border-2 border-Black">
+          <img src="assets/images/illustration-article.svg" alt="This is Illustration Image." class="rounded-[10px]" />
+          <div class="my-6">
+            <div class="bg-Yellow px-3 py-1 w-[82px] rounded-[4px]">
+              <p class="font-extrabold text-[10px] text-center">Learning</p>
+            </div>
+            <div class="my-3">
+              <p class="font-semibold text-[10px]">Published 21 Dec 2023</p>
+            </div>
+            <div class="my-3">
+              <h1 class="font-extrabold text-sm cursor-pointer text-Black">HTML & CSS foundations</h1>
+            </div>
+            <p class="font-semibold text-Grey text-[10px] w-52">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+          </div>
+          <div class="mr-auto">
+            <div class="flex justify-start items-center gap-2">
+              <img src="assets/images/image-avatar.webp" alt="This is avatar image." class="w-6 h-6" />
+              <p class="font-extrabold text-[10px]">Greg Hooper</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>

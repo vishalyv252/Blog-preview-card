@@ -1,0 +1,8 @@
+/* I added the styling of box shadow. */
+.box_shadow{
+  box-shadow: 10px 10px 0px black;
+}
+
+.box_shadow_hover{
+  box-shadow: 25px 25px 0px black;
+}
